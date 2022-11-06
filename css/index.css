@@ -1,0 +1,51 @@
+  .nav-li a:hover {
+    background-color: #111;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #666666;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #eeeeee;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    color: #868686;
+  }
+  
+  .container {
+    padding: 18px;
+    margin-top: 45px;
+  }
+
+  .fractal-win{
+    width: 59%;
+    height: 73vh;
+    float:left;
+    display:block;
+  }
+
+  .adjust-win{
+    width: 39%;
+    height: 73vh;
+    float:left;
+    display:block;
+    margin-left: 2%;
+    background-color: yellow;
+  } 
+
+  #defaultCanvas0{
+    border-radius: 32px;
+  }
