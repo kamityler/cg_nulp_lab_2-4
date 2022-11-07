@@ -13,6 +13,7 @@ function dragonSequence(n) {
       inputs.forEach((el) => {
         if (el.checked) {
           setup(el.value);
+          generate(document.querySelector(".color-sch").value);
         }
       });
       
@@ -30,7 +31,7 @@ function dragonSequence(n) {
     console.log(colorMode()._colorMode);
   }
   
-  function generate(){
+  function generate(el){
     iterations = select("#iterNumber").value();
     dragon = dragonSequence(iterations);
     l = dragon.length;
@@ -41,10 +42,12 @@ function dragonSequence(n) {
     index = 1;
     doLoop=true;
     loop();
-    background(220,0,0);
+    background(0,100,el);
+    console.log(el);
+
   }
   
-  function draw() { 
+  function draw() {   
 
     if(!doLoop) return;
     
