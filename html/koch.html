@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,43 @@
   <link rel="stylesheet" type="text/css" href="/css/index.css" />
   <title>Document</title>
 </head>
+
 <body>
   <div class="navbar">
     <a href="index.html">Home</a>
     <a href="koch.html">Koch Curve</a>
     <a href="harter.html">Harter Curve</a>
   </div>
-  
+
   <div class="container">
-  <div class="fractal-win" id="kochfrac">
-    
-  </div>
-  <div class="adjust-win">
-    <h1>Color scheme</h1>
-    
-  </div>
+    <div class="fractal-win" id="kochfrac">
+
+    </div>
+    <div class="adjust-win">
+      <h1 class="adj">Color scheme</h1>
+      <label class="rb" for="hsl">RGB
+        <input type="radio" id="rgb" name="sch">
+        <span class="radiobut"></span>
+      </label>
+      <br>
+
+      <label class="rb" for="hsl">HSL
+        <input type="radio" id="hsl" name="sch">
+        <span class="radiobut"></span>
+      </label>
+      <br>
+      <div class="inp">
+        <input class="color-sch" type="number">
+        <input class="color-sch" type="number">
+        <input class="color-sch" type="number">
+      </div>
+      <button class="setbt">Set </button>
+    </div>
   </div>
 
   <script src="/js/koch.js"></script>
   <script src="/lib/p5.min.js"></script>
 
 </body>
+
 </html>

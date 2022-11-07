@@ -1,7 +1,7 @@
 let k;
 
 function setup() {
-  let myCanvas = createCanvas(870, 650);
+  let myCanvas = createCanvas(850, 590);
   myCanvas.parent("kochfrac");
   frameRate(1);  
   k = new KochFractal();
@@ -14,7 +14,6 @@ function draw() {
   k.nextLevel();
   if (k.getCount() > 5) {
     k.restart();
-    stroke(51,255,255);
   }
 
 }
