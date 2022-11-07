@@ -17,28 +17,26 @@
   </div>
 
   <div class="container">
-    <div class="fractal-win" id="kochfrac">
+    <div class="fractal-win" id="kochfrac"> </div>
 
-    </div>
     <div class="adjust-win">
-      <h1 class="adj">Color scheme</h1>
-      <label class="rb" for="hsl">RGB
-        <input type="radio" id="rgb" name="sch">
-        <span class="radiobut"></span>
-      </label>
-      <br>
+      <div class="radio_section">
+        <h1 class="adj">Color scheme</h1>
+        <label class="rb" for="rgb">RGB
+          <input class="rbt" type="radio" id="rgb" name="sch" value="rgb" checked>
+          <span class="radiobut"></span>
+        </label>
+        <br>
 
-      <label class="rb" for="hsl">HSL
-        <input type="radio" id="hsl" name="sch">
-        <span class="radiobut"></span>
-      </label>
-      <br>
-      <div class="inp">
-        <input class="color-sch" type="number">
-        <input class="color-sch" type="number">
-        <input class="color-sch" type="number">
+        <label class="rb" for="hsl">HSL
+          <input class="rbt" type="radio" id="hsl" name="sch" value="hsl">
+          <span class="radiobut"></span>
+        </label>
+        <br>
+        <div class="inp">
+          <button class="setbt">Set</button>
+        </div>
       </div>
-      <button class="setbt">Set </button>
     </div>
   </div>
 

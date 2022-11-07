@@ -5,14 +5,29 @@ function dragonSequence(n) {
     }
     return seq;
   }
-  
-  function setup() {
-    let myCanvas = createCanvas(650, 650);
+
+  const radioSection = document.querySelector('.radio_section');
+  let inputs = document.querySelectorAll('.rbt');
+  radioSection.addEventListener('click' , (e) => {
+    if (e.target.classList.contains('rbt')) {
+      inputs.forEach((el) => {
+        if (el.checked) {
+          setup(el.value);
+        }
+      });
+      
+    }
+  });
+
+  function setup(el) {
+    let myCanvas = createCanvas(850, 590);
     myCanvas.parent("harterfrac");
     noLoop();
     doLoop=false;
-    colorMode(HSB);
-    background(220,220,220);
+    background(255,255,102);
+    colorMode(el);
+    console.log(el);
+    console.log(colorMode()._colorMode);
   }
   
   function generate(){
@@ -29,7 +44,8 @@ function dragonSequence(n) {
     background(220,0,0);
   }
   
-  function draw() {
+  function draw() { 
+
     if(!doLoop) return;
     
     for (let k = 0; k < constrain(l/60,0,1000); k++) {

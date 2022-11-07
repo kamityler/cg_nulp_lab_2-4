@@ -1,11 +1,12 @@
 let k;
 
-function setup() {
+function setup(el) {
   let myCanvas = createCanvas(850, 590);
   myCanvas.parent("kochfrac");
   frameRate(1);  
   k = new KochFractal();
   background(255,255,102);
+  colorMode(el);
 }
 
 function draw() {
@@ -17,6 +18,19 @@ function draw() {
   }
 
 }
+
+const radioSection = document.querySelector('.radio_section');
+let inputs = document.querySelectorAll('.rbt');
+radioSection.addEventListener('click' , (e) => {
+  if (e.target.classList.contains('rbt')) {
+    inputs.forEach((el) => {
+      if (el.checked) {
+        setup(el.value);
+      }
+    });
+    
+  }
+});
 
 class KochLine {
   constructor(a,b) {

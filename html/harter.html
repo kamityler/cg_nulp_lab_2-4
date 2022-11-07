@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="/css/index.css" />
   <title>Document</title>
 </head>
+
 <body>
   <div class="navbar">
     <a href="index.html">Home</a>
@@ -16,18 +18,59 @@
 
 
   <div class="container">
-  <div class="fractal-win" id="harterfrac">
+    <div class="fractal-win" id="harterfrac"></div>
 
-  </div>
-  <div class="adjust-win" >
-  Iterations: <input id="iterNumber" type="number" value="5" min="1" max="20"/>
-  Scale: <input id="scaleNumber" type="number" value="0.05" min="0.05" step="0.05"/>
-  <button onclick="generate()">Generate</button>
-  </div>
+    <div class="adjust-win">
+      <div class="radio_section">
+        <h1 class="adj">Color scheme</h1>
+        <label class="rb" for="rgb">RGB
+          <input class="rbt" type="radio" id="rgb" name="sch" value="rgb" checked>
+          <span class="radiobut"></span>
+        </label>
+        <br>
+
+        <label class="rb" for="hsl">HSL
+          <input class="rbt" type="radio" id="hsl" name="sch" value="hsl">
+          <span class="radiobut"></span>
+        </label>
+        <br>
+        <label class="rb" for="hsb">HSB
+          <input class="rbt" type="radio" id="hsb" name="sch" value="hsb">
+          <span class="radiobut"></span>
+        </label>
+        <br>-
+        <!-- <div class="inp">
+          <input class="color-sch" type="number">
+          <input class="color-sch" type="number">
+          <input class="color-sch" type="number">
+          <br>
+        </div> -->
+
+      </div>
+      <!-- <div class="inp">
+        <button class="setbt">Set</button>
+      </div> -->
+      <div>
+        <h1 class="adj">Settings</h1>
+        <label class="rb" for="iterNumber">Iterations:</label>
+        <input class="color-sch" id="iterNumber" type="number" value="5" min="1" max="20" />
+        <br>
+        <label class="rb" for="scaleNumber">Scale:</label>
+        <input class="color-sch" id="scaleNumber" type="number" value="0.05" min="0.05" step="0.05" />
+        <br>
+        <div class="inp">
+          <button class="setbt" onclick="generate()">Generate</button>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
 
   <script src="/js/harter.js"></script>
   <script src="/lib/p5.min.js"></script>
 
 </body>
+
 </html>
