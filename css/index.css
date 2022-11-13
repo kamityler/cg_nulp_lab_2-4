@@ -114,3 +114,13 @@
     color: rgb(255, 255, 102);
   }
 
+  .right-win{
+    height:590px;
+    width:850px;
+    float: left;
+    display: block;
+    border-radius: 32px;
+    border: solid rgb(0, 204, 204);
+    background-color: rgb(255, 255, 102);
+  }
+

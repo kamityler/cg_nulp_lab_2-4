@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <script src="/node_modules/three/build/three.js"></script>
+    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="koch.html">Koch Curve</a>
+        <a href="harter.html">Harter Curve</a>
+        <a href="colors.html">Colors</a>
+    </div>
+
+    <!-- Image and text -->
+    <div class="container">
+        <div class="right-win">
+            <div class="window img_warpper">
+                <div class="bakk"></div>
+                <img src="https://w0.peakpx.com/wallpaper/316/584/HD-wallpaper-autumn-colors-fall-red-pretty-autumn-grass-woods-beautiful-leaves-splendor-beauty-way-road-street-forest-lovely-view-colors-red-autumn-trees-rainy-tree-peaceful-nature-rain.jpg"
+                    class="canvas_wrapper"></img>
+    
+            </div>
+        </div>
+
+        <div class="adjust-win">
+            <div class="window window_instument">
+                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+                    onchange="changeColorInput()" title="Choose your color">
+                <div><label class="scale_label rb" for="">RGB:</label>
+                    <label class="scale_label values" for="">0,0,0</label></div>
+                <div><label class="scale_label rb" for="">HSL:</label>
+                    <label class="scale_label values" for="">0.00,0.00,0.00</label></div>
+    
+                <div>
+                    <p class="rb">Red lightness value</p>
+                    <input type="range" class="my_range range" min="0" max="100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/colors.js"></script>
+
+</body>
+
+</html>

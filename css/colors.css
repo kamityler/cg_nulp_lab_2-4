@@ -1,0 +1,57 @@
+
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.window {
+    display: inline-block;
+    height: 500px;
+    margin: 5%;
+    /*  width: 400px; */
+    padding: 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img_warpper {
+    overflow: hidden;
+    position: relative;
+}
+
+.window img {
+    width: 130%;
+    height: 100%;
+}
+
+.bakk {
+    position: absolute;
+    background-color: #ffffff;
+    mix-blend-mode: screen;
+    overflow: hidden;
+    mix-blend-mode: soft-light;
+    height: 100%;
+    width: 100%;
+}
+
+.values {
+    font-size: 30px;
+}
+
+
+.form-control {
+    position: absolute;
+    right: 10px;
+    top: -0.1px;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+.form-control-color::-moz-color-swatch {
+    border: 0 !important;
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+}
