@@ -2,7 +2,7 @@ let coordinats = [];
 let canvas;
 
 function setup() {
-  createCanvas(640, 645);
+  createCanvas(650, 650);
   canvas = document.querySelector("#defaultCanvas0");
   canvas.style.backgroundImage = "url('/img/index.png')";
   const wrapper = document.querySelector(".canvas_wrapper");

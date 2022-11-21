@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Triangle</title>
+  <title>Трикутник</title>
 
   <script src="/lib/p5.min.js"></script>
   <script src="/lib/p5.sound.min.js"></script>
@@ -22,110 +22,62 @@
     <a href="triangle.html">Трикутник</a>
   </div>
 
+  <div class="container">
+    <div class="canvas_wrapper" title="Система координат"></div>
 
-  <div class="wrapper">
-
-    <div class="canvas_wrapper"></div>
-
-
-
-
-    <div class="window window_instument">
-      <label class="scale_label" for="">Налаштування</label>
-
+    <div class="adjust-win aw1">
+      <h1 class="adj">Налаштування</h1>
       <form>
         <div>
           <div class="form-outline">
-            <label class="form-label" for="formTextExample1">X1</label>
-            <input type="number" id="formTextExample1" class="form-control" aria-describedby="textExample1" value="0"
-            pattern="[-5-5]" max="5" min="-5" title="Enter numbers only." required="'required'" />
+            <label class="form-label rb" for="formTextExample1">X1</label>
+            <input type="number" id="formTextExample1" class="form-control color-sch" aria-describedby="textExample1"
+              value="0" pattern="[-5-5]" max="5" min="-5" title="Ввести значення Х вершини 1" required="'required'" />
           </div>
           <div class="form-outline">
-            <label class="form-label" for="formTextExample2">Y1</label>
-            <input type="number" id="formTextExample2" class="form-control" aria-describedby="textExample1" value="0"
-              max="5" min="-5" pattern="[-5-5] " title="Enter numbers only." required="'required'" />
+            <label class="form-label rb" for="formTextExample2">Y1</label>
+            <input type="number" id="formTextExample2" class="form-control color-sch" aria-describedby="textExample1"
+              value="0" max="5" min="-5" pattern="[-5-5] " title="Ввести значення Y вершини 1" required="'required'" />
           </div>
-
         </div>
         <div>
           <div class="form-outline">
-            <label class="form-label" for="formTextExample3">X2</label>
-            <input type="number" id="formTextExample3" class="form-control" aria-describedby="textExample1" value="2"
-              max="5" min="-5" pattern="[-5-5]" title="Enter numbers only." required="'required'" />
+            <label class="form-label rb" for="formTextExample3">X2</label>
+            <input type="number" id="formTextExample3" class="form-control color-sch" aria-describedby="textExample1"
+              value="2" max="5" min="-5" pattern="[-5-5]" title="Ввести значення Х вершини 2" required="'required'" />
           </div>
           <div class="form-outline">
-            <label class="form-label" for="formTextExample4">Y2</label>
-            <input type="number" id="formTextExample4" class="form-control" aria-describedby="textExample1" value="2"
-              max="5" min="-5" pattern="[-5-5]" title="Enter numbers only." required="'required'" />
+            <label class="form-label rb" for="formTextExample4">Y2</label>
+            <input type="number" id="formTextExample4" class="form-control color-sch" aria-describedby="textExample1"
+              value="2" max="5" min="-5" pattern="[-5-5]" title="Ввести значення Y вершини 2" required="'required'" />
           </div>
-
         </div>
         <div>
           <div class="form-outline">
-            <label class="form-label" for="formTextExample5">X3</label>
-            <input type="number" id="formTextExample5" class="form-control" aria-describedby="textExample1" value="4"
-              max="5" min="-5" pattern="[-5-5]" title="Enter numbers only." required="'required'" />
+            <label class="form-label rb" for="formTextExample5">X3</label>
+            <input type="number" id="formTextExample5" class="form-control color-sch" aria-describedby="textExample1"
+              value="4" max="5" min="-5" pattern="[-5-5]" title="Ввести значення Х вершини 3" required="'required'" />
           </div>
           <div class="form-outline">
-            <label class="form-label" for="formTextExample6">Y3</label>
-            <input type="number" id="formTextExample6" class="form-control" aria-describedby="textExample1" value="0"
-              max="5" min="-5" pattern="[-5-5]" title="Enter numbers only." required="'required'" />
+            <label class="form-label rb" for="formTextExample6">Y3</label>
+            <input type="number" id="formTextExample6" class="form-control color-sch" aria-describedby="textExample1"
+              value="0" max="5" min="-5" pattern="[-5-5]" title="Ввести значення Y вершини 3" required="'required'" />
           </div>
-
         </div>
-
         <div class="tools-section">
-          <div class="form-outline">
-            <label class="form-label some-class" for="formTextExample7">Збільшити</label>
-            <input class="form-check-input" type="checkbox" title="Збільшити трикутник в 1.5 раза" value="" id="formTextExample7">
+          <div class="form-outline" title="Збільшити трикутник в 1.5 раза">
+            <input class="form-check-input" type="checkbox" value="" id="formTextExample7">
+            <label class="form-label rb" for="formTextExample7">Збільшити</label>
           </div>
-
-          <div class="form-outline mirroring-section">
-            <label class="form-label form-for-checkbox" title="Віддзеркалення відповідно точки центру координат" for="x">Віддзекркалити відповідно (0;0)</label>
+          <br>
+          <div class="form-outline mirroring-section" title="Віддзеркалення відповідно точки центру системи координат">
             <input class="form-check-input" type="checkbox" value="" id="x">
+            <label class="form-label rb form-for-checkbox" for="x">Віддзекркалити відповідно (0;0)</label>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit" title="Застосувати зміни">Застосувати</button>
-
-      </form>
-
-    </div>
-
-
-    <!-- <div class="radio_section">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-               First color cheme
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Second color cheme
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Third color cheme
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Fourth color cheme
-              </label>
-            </div>
-          </div>
-          <div class="scale_wrappers">
-            <label class="scale_label" for="">Scale</label>
-            <div class="scale_wrapper"></div>
-          </div> -->
-
-  </div>
-  </div>
-  <script src="/js/sketch.js"></script>
+        <div class="inp">
+          <button class="btn btn-primary setbt" type="submit" title="Застосувати зміни">Застосувати</button </div>
+            </form> </div> </div> <script src="/js/sketch.js"></script>
 </body>
 
 </html>
