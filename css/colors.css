@@ -27,7 +27,7 @@
 
 .bakk {
     position: absolute;
-    background-color: #ffffff;
+    background-color: rgb(255,255,255);
     mix-blend-mode: screen;
     overflow: hidden;
     mix-blend-mode: soft-light;

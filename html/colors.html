@@ -15,44 +15,42 @@
 
 <body>
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="koch.html">Koch Curve</a>
-        <a href="harter.html">Harter Curve</a>
-        <a href="colors.html">Colors</a>
+        <a href="index.html">Знання</a>
+        <a href="koch.html">Крива Коха</a>
+        <a href="harter.html">Крива Дракона</a>
+        <a href="colors.html">Кольори</a>
+        <a href="triangle.html">Трикутник</a>
     </div>
-
-    <!-- Image and text -->
     <div class="container">
         <div class="right-win">
             <div class="window img_warpper">
                 <div class="bakk"></div>
                 <img src="https://w0.peakpx.com/wallpaper/316/584/HD-wallpaper-autumn-colors-fall-red-pretty-autumn-grass-woods-beautiful-leaves-splendor-beauty-way-road-street-forest-lovely-view-colors-red-autumn-trees-rainy-tree-peaceful-nature-rain.jpg"
                     class="canvas_wrapper"></img>
-    
+
             </div>
         </div>
-
         <div class="adjust-win">
+            <h1 class="adj">Налаштування</h1>
             <div class="window window_instument">
                 <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
-                    onchange="changeColorInput()" title="Choose your color">
-                <div><label class="scale_label rb" for="">RGB:</label>
-                    <label class="scale_label values" for="">0,0,0</label></div>
-                <div><label class="scale_label rb" for="">HSL:</label>
-                    <label class="scale_label values" for="">0.00,0.00,0.00</label></div>
-    
-                <div>
-                    <p class="rb">Red lightness value</p>
+                    onchange="changeColorInput()" title="Обрати колір RGB">
+                <div title="Значення фільтра у колірній моделі RGB">
+                    <label class="scale_label rb" for="">RGB:</label>
+                    <label class="scale_label values" for="">0,0,0</label>
+                </div>
+                <div title="Значення фільтра у колірній моделі HSL">
+                    <label class="scale_label rb" for="">HSL:</label>
+                    <label class="scale_label values" for="">0.00,0.00,0.00</label>
+                </div>
+                <div title="Змінити освітленість червоного кольору HSL">
+                    <p class="adj rb1">Освітленість червоного</p>
                     <input type="range" class="my_range range" min="0" max="100">
                 </div>
             </div>
         </div>
     </div>
-
-
-
     <script src="/js/colors.js"></script>
-
 </body>
 
 </html>

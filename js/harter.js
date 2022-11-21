@@ -20,18 +20,16 @@ function dragonSequence(n) {
     }
   });
 
-  function setup(el) {
+  function setup() {
     let myCanvas = createCanvas(850, 590);
     myCanvas.parent("harterfrac");
     noLoop();
     doLoop=false;
     background(255,255,102);
-    colorMode(el);
-    console.log(el);
-    console.log(colorMode()._colorMode);
+    colorMode(HSB);
   }
   
-  function generate(el){
+  function generate(){
     iterations = select("#iterNumber").value();
     dragon = dragonSequence(iterations);
     l = dragon.length;
@@ -42,9 +40,7 @@ function dragonSequence(n) {
     index = 1;
     doLoop=true;
     loop();
-    background(0,100,el);
-    console.log(el);
-
+    background(60,60,100);
   }
   
   function draw() {   

@@ -1,36 +1,23 @@
 let k;
 
-function setup(el,val) {
-  let myCanvas = createCanvas(850, 590);
+function setup() {
+  let myCanvas = createCanvas(1480, 590);
   myCanvas.parent("kochfrac");
   frameRate(1);  
   k = new KochFractal();
-  stroke(0,70,val);
-  colorMode(el);
+  stroke(0, 204, 204);
+
 }
 
 function draw() {
-  background(60,100,70);
+  background(254, 254, 92);
+  strokeWeight(3);
   k.render();
   k.nextLevel();
   if (k.getCount() > 5) {
     k.restart();
   }
-
 }
-
-const radioSection = document.querySelector('.radio_section');
-let inputs = document.querySelectorAll('.rbt');
-radioSection.addEventListener('click' , (e) => {
-  if (e.target.classList.contains('rbt')) {
-    inputs.forEach((el) => {
-      if (el.checked) {
-        setup(el.value, document.querySelector(".color-sch").value);  
-      }
-    });
-    
-  }
-});
 
 class KochLine {
   constructor(a,b) {
@@ -38,8 +25,7 @@ class KochLine {
     this.end = b.copy();
   }
 
-  display(el) { 
-    // stroke(180,100,40);
+  display() { 
     line(this.start.x, this.start.y, this.end.x, this.end.y);
   }
 
