@@ -1,0 +1,11 @@
+.content {
+    width: 38%;
+    height: 590px;
+    float: left;
+    background-color: rgb(255, 255, 102);
+    border-radius: 32px;
+    padding-left: 24px;
+    margin-left: 20px;
+    border: solid rgb(0, 204, 204);
+    color: rgb(0, 204, 204);
+}
